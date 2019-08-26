@@ -19,6 +19,11 @@ CIDR:
       name: 'MyCIDR'
       id: '10.1.0.0/24,10.0.0.0/24'
 ```
+
+For location, ANS, and ISP information I used the [geoip2](https://dev.maxmind.com/geoip/geoip2/geolite2/) offiline as it does not have to use any API and is not dependent on daily limits.
+
+These files should be downloaded and placed in the `utils\*` folder, such as `GeoLite2-ASN.mmdb`,` GeoLite2-City.mmdb` and `GeoLite2-Country.mmdb`.
+
 ## Usage
 
 To use the script create a file with all the domains you want to discover, one below the other, like the following example:
@@ -33,7 +38,7 @@ After creating your file, use the following command to get started.
 
 
 ```
-python SearchSubdomains.py --config utils\config\config.yml --target target.txt
+python SplunkSubDomains.py --config utils\config\config.yml --target target.txt
 ```
 
 ## Output
@@ -56,4 +61,3 @@ python SearchSubdomains.py --config utils\config\config.yml --target target.txt
    "longitude":-43.2192
 }
 ```
-
