@@ -1,0 +1,12 @@
+apid: 'APPID'
+secret: 'SECRET'
+database_path: 'utils/'
+database_name: 'database.db'
+splunk_dir: 'utils/logs/'
+debug: True
+checkcidr: False
+
+CIDR:
+  - group:
+      name: 'MyCIDR'
+      id: '10.1.0.0/24,10.0.0.0/24'
