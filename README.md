@@ -33,7 +33,7 @@ After creating your file, use the following command to get started.
 
 
 ```
-python SplunkSubDomains.py --config utils\config\config.yml --target target.txt
+python SearchSubdomains.py --config utils\config\config.yml --target target.txt
 ```
 
 ## Output
